@@ -5,8 +5,7 @@
 #include <fstream>
 #include <iostream>
 using namespace std;
-// latest update:put memaccess and wb into slt to test taking 2 cycles to
-// execute
+
 string instructions[1000];  // save the instructios
 string
     fetchedInsts[2500];  // save the instructions in the order they were fetched
