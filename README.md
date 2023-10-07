@@ -6,8 +6,8 @@
 This program implement the simple MIPS pipeline, including the following instructions `"lw"`, `"sw"`, `"add"`, `"addi"`, `"sub"`, `"and"`, `"andi"`, `"or"`, `"slt"`, `"bne"`.
 In addition to the instructions, it also support detecting and dealing `"data hazard"`, `"hazard with load"`, `"branch hazard"`.  Data forwarding has been removed in this version (data hazards cause delays).
 
-Note that in this version, there are some issues involving `"bne"` and tracking the cycles that instructions get written back on.  Programs using `"bne"` will not always be simulated perfectly.
-Also note that `"sub"` has been coded to take 3 cycles in the execute stage of the pipeline, as an example.
+Note that in this version, there are some niche issues involving `"bne"` and tracking the cycles that instructions get written back on.  Programs using `"bne"` will not always be simulated perfectly.
+Also note that `"sub"` has been coded to take 3 cycles in the execute stage of the pipeline, as an example of an instruction that takes more than 1 cycle to execute.
 ## Initialize
 
 There are ten registers, and their initial value is as below:
